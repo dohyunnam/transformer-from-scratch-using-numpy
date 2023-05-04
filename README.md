@@ -11,6 +11,13 @@ DISCLAIMER: these functions are basically unusable for pytorch, tensorflow, and 
 The training would need to be coded by hand, making these functions impractical for real use.
 These are just for a better, in-depth showcase of how specific parts of the transformer model works.
 
+THINGSIWOULDCHANGEINTHEFUTURE:
+if I do come back to this project, I'll make these all into a class so the learnable parameters like alpha and beta are ACTUALLY trainable with ease. It will also allow integration with pytorch or tensorflow, making a somewhat useable model. 
+
+I also am using individual characters (A, B, C, ... etc) instead of words. using words instead of characters will improve accuracy of the model (if it was created), but it will increase training time.
+
+I also shouldn't use numpy as numpy and pure python in general runs entirely on the CPU, making it unoptimized for training Transformer models (any machine learning models, but transformers ESPESCIALLY since transformers were designed to be ran with all words of the input simultaneously, aka by doing a bunch of matrix math.
+
 Works referenced: 
 
 https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
