@@ -3,7 +3,7 @@
 Functions in the Transformer architecture, rewritten from scratch using numpy.
 
 These are basically the small rectangles in the Transformer diagram:
-![Uploading image.png…]()
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/80630045/236146751-b326edbf-c4be-44f9-8811-c16ddd2dd59f.png">
 
 DISCLAIMER: these functions are basically unusable for pytorch, tensorflow, and other automatic differentiation libraries for training. 
 The training would need to be coded by hand, making these functions impractical for real use.
